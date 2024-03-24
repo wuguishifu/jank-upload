@@ -1,0 +1,74 @@
+{
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "src/components/ui/**/*.tsx"
+      ],
+      "rules": {
+        "indent": "off",
+        "@typescript-eslint/indent": "off",
+        "quotes": "off"
+      }
+    }
+  ],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "off"
+    ],
+    "@typescript-eslint/indent": [
+      "error",
+      4
+    ],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-compare-neg-zero": "error",
+    "no-const-assign": "error",
+    "no-constant-condition": "error",
+    "no-sparse-arrays": "error",
+    "no-unsafe-finally": "error",
+    "no-unsafe-negation": "error",
+    "capitalized-comments": [
+      "error",
+      "never"
+    ],
+    "eqeqeq": "error",
+    "dot-notation": "error",
+    "no-eval": "error",
+    "no-extra-boolean-cast": "error",
+    "no-lonely-if": "error",
+    "no-unneeded-ternary": "error",
+    "no-warning-comments": [
+      "error",
+      {
+        "terms": [
+          "todo"
+        ],
+        "location": "anywhere"
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "yoda": "warn"
+  }
+}
