@@ -70,7 +70,114 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer base {
+  .float {
+    box-shadow: 0 0 53px 4px rgba(0, 0, 0, 0.07);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: (--font-nunito);
+  }
+
+  .code {
+    font-family: 'Cascadia Code', monospace;
+  }
+
+  h1 {
+    font-family: var(--font-nunito);
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: var(--font-nunito);
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: var(--font-nunito);
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-family: var(--font-nunito);
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-family: var(--font-nunito);
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h6 {
+    font-family: var(--font-nunito);
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: var(--font-nunito);
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .pending {
+    color: hsl(220, 98%, 37%);
+  }
+
+  .uploading {
+    color: hsl(38, 98%, 37%);
+  }
+
+  .uploaded {
+    color: hsl(108, 98%, 37%);
+  }
+
+  .failed {
+    color: hsl(341, 98%, 37%);
   }
 }
